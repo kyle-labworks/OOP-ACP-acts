@@ -20,8 +20,8 @@ account.withdraw(30)
 print(account.get_balance())
 
 
-# Answer in 1: To protect it from direct access
-# Answer in 2: Error because it's private
+# Answer in 1: To prevent direct access and protect the balance from being changed outside the class.
+# Answer in 2: It raises an AttributeError because __balance is name-mangled and not directly accessible.
 
 
 // JAVA
@@ -53,5 +53,5 @@ public class Main {
     }
 }
 
-// Answer in 1: To protect it from direct access
-// Answer in 2: Error
+// Answer in 1: To restrict access and ensure the balance is only modified through controlled methods.
+// Answer in 2: The compiler shows an error: balance has private access in BankAccount.
