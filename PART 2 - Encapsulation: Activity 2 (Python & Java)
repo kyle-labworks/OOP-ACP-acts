@@ -1,0 +1,56 @@
+# PYTHON
+
+class Person:
+    def __init__(self):
+        self._age = 0
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, value):
+        if value > 0:
+            self._age = value
+        else:
+            print("Invalid age")
+
+person = Person()
+person.age = 25
+print(person.age)
+person.age = -5  # Invalid age
+
+
+# Answer in 1: @property
+# Answer in 2: It keeps data safe and controlled
+
+
+// JAVA
+
+class Person {
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int value) {
+        if (value > 0) {
+            age = value;
+        } else {
+            System.out.println("Invalid age");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setAge(25);
+        System.out.println(person.getAge());
+        person.setAge(-5);  // Invalid age
+    }
+}
+
+// Answer in 1: Getters and Setters
+// Answer in 2: It keeps data safe and controlled
