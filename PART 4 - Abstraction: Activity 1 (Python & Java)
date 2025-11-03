@@ -18,8 +18,8 @@ circle = Circle(5)
 print(circle.area())
 
 
-# Answer in 1: To force child classes to write their own method
-# Answer in 2: No, because it’s abstract
+# Answer in 1: To define a common interface and force subclasses to implement the area() method.
+# Answer in 2: No — Shape is abstract and cannot be instantiated.
 
 
 // JAVA
@@ -48,5 +48,5 @@ public class Main {
 }
 
 
-// Answer in 1: To force child classes to write their own method
-// Answer in 2: No, because it’s abstract
+// Answer in 1: To prevent direct instantiation and require subclasses to provide specific behavior.
+// Answer in 2: No — abstract classes cannot be used to create objects directly.
