@@ -1,0 +1,68 @@
+# PYTHON
+
+class Vehicle:
+    def __init__(self, brand, fuel):
+        self.brand = brand
+        self.fuel = fuel
+
+class Car(Vehicle):
+    def __init__(self, brand, fuel, doors):
+        self.brand = brand
+        self.fuel = fuel
+        self.doors = doors
+
+    def drive(self):
+        if self.fuel > 0:
+            self.fuel -= 1
+            print("Driving...")
+        else:
+            print("Out of fuel!")
+
+my_car = Car("Toyota", 2, 4)
+my_car.drive()
+my_car.drive()
+my_car.drive()
+
+
+# Answer in 1: None because we set the values manually
+# Answer in 2: To reuse and extend the Vehicle class
+
+
+// JAVA
+
+class Vehicle {
+    String brand;
+    int fuel;
+}
+
+class Car extends Vehicle {
+    int doors;
+
+    Car(String brand, int fuel, int doors) {
+        this.brand = brand;
+        this.fuel = fuel;
+        this.doors = doors;
+    }
+
+    void drive() {
+        if (fuel > 0) {
+            fuel--;
+            System.out.println("Driving...");
+        } else {
+            System.out.println("Out of fuel!");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2, 4);
+        myCar.drive();
+        myCar.drive();
+        myCar.drive();
+    }
+}
+
+
+// Answer in 1: Also none because we set the values manually
+// Answer in 2: To reuse and extend the Vehicle class
