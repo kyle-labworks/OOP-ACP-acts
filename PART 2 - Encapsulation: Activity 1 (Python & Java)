@@ -1,0 +1,57 @@
+# PYTHON
+
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount()
+account.deposit(100)
+account.withdraw(30)
+print(account.get_balance())
+
+
+# Answer in 1: To protect it from direct access
+# Answer in 2: Error because it's private
+
+
+// JAVA
+
+class BankAccount {
+    private int balance = 0;
+
+    public void deposit(int amount) {
+        balance += amount;
+    }
+
+    public void withdraw(int amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        }
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount();
+        account.deposit(100);
+        account.withdraw(30);
+        System.out.println(account.getBalance());
+    }
+}
+
+// Answer in 1: To protect it from direct access
+// Answer in 2: Error
