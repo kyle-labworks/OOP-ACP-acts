@@ -1,0 +1,57 @@
+# PYTHON
+
+class Animal:
+    def speak(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def speak(self):
+        print("Meow!")
+
+dog = Dog()
+cat = Cat()
+dog.speak()
+cat.speak()
+
+# Answer in 1:  INHERITANCE in used.
+# Answer in 2: 
+              Woof!
+              Meow!
+
+// JAVA
+
+class Animal {
+    void speak() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println("Woof!");
+    }
+}
+
+class Cat extends Animal {
+    void speak() {
+        System.out.println("Meow!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        dog.speak();
+        cat.speak();
+    }
+}
+
+// Answer in 1: Also INHERITANCE
+// Answer in 2:
+                Woof!
+                Meow!
