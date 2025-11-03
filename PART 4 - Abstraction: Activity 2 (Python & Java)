@@ -21,8 +21,8 @@ print(e1.calculate_pay())
 print(e2.calculate_pay())
 
 
-# Answer in 1: To hide details and force structure
-# Answer in 2: calculate_pay()
+# Answer in 1: To hide implementation details and enforce a structure for subclasses.
+# Answer in 2: The @abstractmethod decorated method calculate_pay() in the Employee class.
 
 
 // JAVA
@@ -53,5 +53,5 @@ public class Main {
 }
 
 
-// Answer in 1: To hide details and force structure
-// Answer in 2: calculatePay() (marked as abstract)
+// Answer in 1: To define a blueprint for classes while hiding the internal logic.
+// Answer in 2: The abstract method calculatePay() in the Employee class.
