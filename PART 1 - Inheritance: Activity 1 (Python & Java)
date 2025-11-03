@@ -17,10 +17,8 @@ cat = Cat()
 dog.speak()
 cat.speak()
 
-# Answer in 1:  INHERITANCE in used.
-# Answer in 2: 
-              Woof!
-              Meow!
+# Answer in 1: Inheritance — subclasses override the speak() method from the base class.
+# Answer in 2: Woof! and Meow! — printed by the Dog and Cat classes.
 
 // JAVA
 
@@ -51,7 +49,5 @@ public class Main {
     }
 }
 
-// Answer in 1: Also INHERITANCE
-// Answer in 2:
-                Woof!
-                Meow!
+// Answer in 1: Inheritance — child classes extend the parent class and redefine the speak() method.
+// Answer in 2: Woof! and Meow! — printed by the overridden speak() methods in Dog and Cat.
