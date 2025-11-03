@@ -21,8 +21,8 @@ print(person.age)
 person.age = -5  # Invalid age
 
 
-# Answer in 1: @property
-# Answer in 2: It keeps data safe and controlled
+# Answer in 1: @property and @setter decorators.
+# Answer in 2: It allows validation logic when setting values, preventing invalid data.
 
 
 // JAVA
@@ -52,5 +52,5 @@ public class Main {
     }
 }
 
-// Answer in 1: Getters and Setters
-// Answer in 2: It keeps data safe and controlled
+// Answer in 1: Public getter and setter methods (getAge() and setAge()).
+// Answer in 2: It hides internal implementation and protects object integrity.
