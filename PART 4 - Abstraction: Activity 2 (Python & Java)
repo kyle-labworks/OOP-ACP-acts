@@ -1,0 +1,57 @@
+# PYTHON
+
+from abc import ABC, abstractmethod
+
+class Employee(ABC):
+    @abstractmethod
+    def calculate_pay(self):
+        pass
+
+class HourlyEmployee(Employee):
+    def calculate_pay(self):
+        return 100
+
+class SalariedEmployee(Employee):
+    def calculate_pay(self):
+        return 500
+
+e1 = HourlyEmployee()
+e2 = SalariedEmployee()
+print(e1.calculate_pay())
+print(e2.calculate_pay())
+
+
+# Answer in 1: To hide details and force structure
+# Answer in 2: calculate_pay()
+
+
+// JAVA
+
+abstract class Employee {
+    abstract double calculatePay();
+}
+
+class HourlyEmployee extends Employee {
+    double calculatePay() {
+        return 100;
+    }
+}
+
+class SalariedEmployee extends Employee {
+    double calculatePay() {
+        return 500;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee e1 = new HourlyEmployee();
+        Employee e2 = new SalariedEmployee();
+        System.out.println(e1.calculatePay());
+        System.out.println(e2.calculatePay());
+    }
+}
+
+
+// Answer in 1: To hide details and force structure
+// Answer in 2: calculatePay() (marked as abstract)
