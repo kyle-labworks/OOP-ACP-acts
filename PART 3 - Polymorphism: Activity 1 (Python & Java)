@@ -14,8 +14,8 @@ printer1.print_document()
 printer2.print_document()
 
 
-# Answer in 1: Same method name, different behavior
-# Answer in 2: Both classes use print_document() differently
+# Answer in 1: 	Different classes can define the same method name with different behavior.
+# Answer in 2: Both InkPrinter and LaserPrinter have a print_document() method with different outputs.
 
 
 // JAVA
@@ -42,5 +42,5 @@ public class Main {
 }
 
 
-// Answer in 1: Same method name, different behavior
-// Answer in 2: Both classes use printDocument() differently
+// Answer in 1: Method overriding allows subclasses to provide their own version of a method.
+// Answer in 2: Each printer class overrides printDocument() to behave differently.
