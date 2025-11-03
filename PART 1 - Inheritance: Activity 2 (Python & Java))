@@ -24,8 +24,8 @@ my_car.drive()
 my_car.drive()
 
 
-# Answer in 1: None because we set the values manually
-# Answer in 2: To reuse and extend the Vehicle class
+# Answer in 1: No function is used here — values are manually assigned in the child class.
+# Answer in 2: To reuse attributes like brand and fuel from the Vehicle class in Car.
 
 
 // JAVA
@@ -64,5 +64,5 @@ public class Main {
 }
 
 
-// Answer in 1: Also none because we set the values manually
-// Answer in 2: To reuse and extend the Vehicle class
+// Answer in 1: No super() is used — values are manually assigned in the constructor.
+// Answer in 2: To extend the Vehicle class and add new features like doors and drive() in Car.
