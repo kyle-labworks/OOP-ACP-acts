@@ -1,0 +1,46 @@
+# PYTHON
+
+class InkPrinter:
+    def print_document(self):
+        print("Ink printing")
+
+class LaserPrinter:
+    def print_document(self):
+        print("Laser printing")
+
+printer1 = InkPrinter()
+printer2 = LaserPrinter()
+printer1.print_document()
+printer2.print_document()
+
+
+# Answer in 1: Same method name, different behavior
+# Answer in 2: Both classes use print_document() differently
+
+
+// JAVA
+
+class InkPrinter {
+    void printDocument() {
+        System.out.println("Ink printing");
+    }
+}
+
+class LaserPrinter {
+    void printDocument() {
+        System.out.println("Laser printing");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        InkPrinter printer1 = new InkPrinter();
+        LaserPrinter printer2 = new LaserPrinter();
+        printer1.printDocument();
+        printer2.printDocument();
+    }
+}
+
+
+// Answer in 1: Same method name, different behavior
+// Answer in 2: Both classes use printDocument() differently
