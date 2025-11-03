@@ -16,8 +16,8 @@ make_it_speak(Robot())
 # make_it_speak(123)  # Uncommenting this will cause an error
 
 
-# Answer in 1: If it has the method, we can use it
-# Answer in 2: Error: int has no speak() method
+# Answer in 1: If an object has the required method, it can be used — regardless of its type.
+# Answer in 2: It raises an error: 'int' object has no attribute 'speak'.
 
 
 
@@ -49,5 +49,5 @@ public class Main {
 }
 
 
-// Answer in 1: If it has the method, we can use it
-// Answer in 2: Error: 123 is not a Speaker
+// Answer in 1: Java doesn’t support duck typing directly; it uses interfaces to define expected behavior.
+// Answer in 2: You can't pass an int to a method expecting a class with speak() — it won’t compile.
